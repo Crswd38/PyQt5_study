@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import *
 
-class Example(QMainWindow):
+class Example(QWidget):
 
     def __init__(self):
         super().__init__()
