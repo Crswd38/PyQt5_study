@@ -93,23 +93,6 @@ class Example(QWidget):
         if(err >= self.sens):
             t = time.localtime()
             
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
 app = QApplication([])
 ex = Example()
 sys.exit(app.exec_())

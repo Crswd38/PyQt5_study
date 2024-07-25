@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_test">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>120</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main to Second window</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_test</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn_main_to_second()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btn_main_to_second()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="btn_test">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>110</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Second window to Main</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_test</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>btn_second_to_main()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>245</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btn_second_to_main()</slot>
+ </slots>
+</ui>
